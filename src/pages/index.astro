@@ -3,19 +3,34 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
+import ImageCard from "../components/ImageCard.astro";
 ---
 
 <MainLayout title="Welcome to My Website">
-	<h1>My First Website</h1>
-	<p>A simple website built with Astro</p>
+  <h1>Hello! Welcome</h1>
+  <p>A simple website built with Astro</p>
 
-	<!-- Example of using a component with props -->
-	<Button text="Learn More" />
+  <!-- Example of using a component with props -->
+  <Button text="Explore" />
 
-	<h2>Features</h2>
-
-	<!-- Example of using another component with props -->
-	<Card title="Simple Design" content="Clean and minimal design that's easy to understand." />
-	<Card title="Easy to Edit" content="Change text, colors, and layout with simple code." />
-	<Card title="Learn by Doing" content="Every file has helpful comments to guide you." />
-</Layout>
+  <h2>Features</h2>
+  <ImageCard
+    link="https://iafor.org/wp-content/uploads/2020/08/JoE-blog-writing-an-abstract.jpg"
+    height="300"
+    caption="Abstract Illustration"
+  />
+  <!-- Example of using another component with props -->
+  <Card
+    title="Simple Design"
+    content="Clean and minimal design that's easy to understand."
+  />
+  <Card
+    title="Easy to Edit"
+    content="Change text, colors, and layout with simple code."
+  />
+  <Card
+    title="Learn by Doing"
+    content="Every file has helpful comments to guide you."
+  />
+  <Button text="Go Back" />
+</MainLayout>
